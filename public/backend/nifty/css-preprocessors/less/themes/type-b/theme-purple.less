@@ -1,0 +1,84 @@
+@import "../../_variables.less";
+& when not (@main-compile){
+    @import "../_themes.less";
+}
+
+
+
+
+// BODY
+//============================================
+@body-bg                    : #ecf0f5;
+@body-color					: #758697;
+@boxed-bg                   : #887c8f;
+@text-muted                 : lighten(@body-color, 20%);
+
+
+
+
+// GENERAL COMPONENTS
+//============================================
+@state-active-bg            : #834e7d;
+@state-active-color         : #fff;
+
+@selection-bg			    : @state-active-bg;
+@selection-color			: @state-active-color;
+
+
+
+
+// CLEAN ZONE (LOGIN, REGISTER, AND ERROR PAGES CONTAINER)
+//============================================
+@cls-bg                     : @body-bg;
+@cls-color                  : darken(@body-color, 7%);
+
+
+
+
+// NAVIGATION
+//============================================
+@mainnav-bg                 : #23232b;
+@mainnav-color              : lighten(@mainnav-bg, 55%);
+@mainnav-hover-color        : #fff;
+@mainnav-active-bg          : transparent;
+@mainnav-active-color       : #fff;
+@mainnav-active-state       : @state-active-bg;
+
+
+
+
+// NAVBAR & LOGO
+//============================================
+@navbar-bg                  : #fff;
+@navbar-color               : @body-color;
+@brand-bg                   : transparent;
+@brand-bg-overlay           : @state-active-bg;
+@brand-color                : @state-active-color;
+@brand-color-overlay        : @navbar-color;
+
+
+
+
+// ASIDE
+//============================================
+@aside-dark-bg              : lighten(@mainnav-bg, 6%);
+@aside-dark-color           : #fff;
+@aside-bright-bg            : #fff;
+@aside-bright-color         : @body-color;
+
+
+
+
+// TIMELINE
+//============================================
+@timeline-bg                : @body-bg;
+@timeline-color             : @body-color;
+@timeline-border-color		: lighten(@body-color, 25%);
+
+
+
+
+// FOOTER
+//============================================
+@footer-bg                  : lighten(@body-bg, 2%);
+@footer-color               : @body-color;

@@ -1,0 +1,57 @@
+
+/* FOOTER */
+/*======================================*/
+#footer{
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
+    background-color: $footer-bg;
+    color: $footer-color;
+    position: absolute;
+    padding-top: 10px;
+    bottom: 0;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    height: 35px;
+    p{
+        margin-bottom: 5px;
+    }
+}
+
+
+.footer-list{
+    margin-bottom: 0;
+    > li{
+        vertical-align: top
+    }
+}
+
+
+/* FOOTER - FIXED POSITION */
+/*======================================*/
+#container.footer-fixed #footer{
+    left: 0;
+    position: fixed;
+    bottom: 0;
+    margin-top: -35px;
+    z-index: 1
+}
+
+
+#footer{
+    .show-fixed{
+        display: none;
+    }
+    .hide-fixed{
+        display: block;
+        height: 100%
+    }
+}
+#container.footer-fixed #footer{
+    .show-fixed{
+        display: block;
+        height: 100%
+    }
+    .hide-fixed{
+        display: none;
+    }
+}

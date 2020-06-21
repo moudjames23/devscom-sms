@@ -1,0 +1,363 @@
+// GENERAL LAYOUT VARIABLES
+// ============================================
+
+
+// Fonts
+// --------------------------------------------
+$font-family-base           : 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+$font-size-base             : 13px
+$font-semibold              : 600
+
+
+// Default background and text color
+// --------------------------------------------
+$body-bg                    : #ecf0f5
+$body-color                 : #758697
+$body-main-color            : #2b425b
+
+
+// Boxed layout
+// --------------------------------------------
+$boxed-top-margin           : 45px
+$boxed-btm-margin           : 0
+$boxed-width                : 1128px
+$boxed-width-hd             : 1280px // Max boxed width for monitors support more than 1920x1200 resolution.
+$boxed-bg                   : #637a8b
+$boxed-bg-img               : 'none' // Set the boxed background image. EX: '../img/landscape.jpg'
+
+
+// Links color
+// --------------------------------------------
+$link-color                 : $body-color
+$link-hover-color           : darken($body-color, 5%)
+
+
+// Border and grid gutter
+// --------------------------------------------
+$border-color-base          : #e9e9e9
+$border-radius-base         : 0
+$grid-gutter-width          : 15px
+
+
+// Components Active State
+// --------------------------------------------
+$state-active-bg            : #42A5F5
+$state-active-color         : #ffffff
+
+
+// Text Selections
+// --------------------------------------------
+$selection-bg               : $state-active-bg
+$selection-color            : $state-active-color
+
+
+
+
+// CLEAN ZONE (LOGIN, REGISTER, AND ERROR PAGES CONTAINER)
+//============================================
+$cls-bg                     : $body-bg
+$cls-color                  : darken($body-color, 7%)
+
+
+
+
+// NAVIGATION
+//============================================
+$mainnav-bg                 : #263238
+$mainnav-color              : #abb1b7
+$mainnav-hover-color        : #ffffff
+$mainnav-active-bg          : transparent
+$mainnav-active-color       : #ffffff
+$mainnav-active-state       : darken($state-active-bg, 15%)
+$mainnav-lg-width           : 220px
+$mainnav-sm-width           : 50px
+$mainnav-profile-bg         : '../img/nav-profile.png' // Disabled the background image by add 'none' to the value.
+
+
+// Reduce the file size by disabling features that you do not use.
+$mainnav-collapse           : true
+$mainnav-slide              : true
+$mainnav-reveal             : true
+
+
+
+
+// NAVBAR
+//============================================
+$navbar-bg                  : #ffffff
+$navbar-color               : $body-color
+$brand-bg                   : transparent
+$brand-bg-overlay           : $mainnav-bg
+$brand-color                : $state-active-color
+$brand-color-overlay        : $navbar-color
+$brand-font-size            : 18px
+$navbar-height              : 40px
+
+
+
+
+// ASIDE
+//============================================
+$aside-width                : 255px
+$aside-dark-bg              : lighten($mainnav-bg, 6%)
+$aside-dark-color           : #ffffff
+$aside-bright-bg            : #ffffff
+$aside-bright-color         : $body-color
+$aside-tabs                 : true
+
+
+
+
+// FOOTER
+//============================================
+$footer-bg                  : lighten($body-bg, 2%)
+$footer-color               : $body-color
+
+
+
+
+// ANIMATION
+//============================================
+$enable-animation           : true
+$enable-easeInQuart         : true
+$enable-easeOutQuart        : true
+$enable-easeInBack          : true
+$enable-easeOutBack         : true
+$enable-easeInOutBack       : true
+$enable-steps               : true
+$enable-jumping             : true
+$enable-rubber              : true
+
+
+// Animation duration
+// --------------------------------------------
+$ease-duration              : .35s
+$easeInQuart                : .35s
+$easeOutQuart               : .5s
+$easeInBack                 : .35s
+$easeOutBack                : .35s
+$easeInOutBack              : .5s
+$steps                      : .5s
+$jumping                    : .7s
+$rubber                     : .5s
+
+
+
+
+
+// COMPONENTS
+//============================================
+// Reduce the file size by disabling the color of the components that you do not use.
+// --------------------------------------------
+$enable-mint                : true
+$enable-purple              : true
+$enable-pink                : true
+$enable-dark                : true
+
+
+// Background Colors
+// --------------------------------------------
+$light-bg                   : #ffffff
+$gray-bg                    : #e6eaed
+$primary-bg                 : #42a5f5
+$info-bg                    : #00bcd4
+$success-bg                 : #8bc34a
+$warning-bg                 : #ffa726
+$danger-bg                  : #ef5350
+$mint-bg                    : #26a69a
+$purple-bg                  : #ba68c8
+$pink-bg                    : #ec407a
+$dark-bg                    : #263238
+
+
+// Text Colors
+// --------------------------------------------
+$text-muted                 : lighten($body-color, 20%)
+$light-color                : $body-color
+$gray-color                 : $body-color
+$primary-color              : #ffffff
+$info-color                 : #ffffff
+$success-color              : #ffffff
+$warning-color              : #ffffff
+$danger-color               : #ffffff
+$mint-color                 : #ffffff
+$purple-color               : #ffffff
+$pink-color                 : #ffffff
+$dark-color                 : #ffffff
+
+
+
+
+
+
+
+// OVERWRITE BOOTSTRAP COMPONENT
+// ============================================
+// Please disabled components that you do not use.
+
+$table                      : true
+$form-control               : true
+$nav-pills                  : true
+$list-group                 : true
+$label                      : true
+$badge                      : true
+$breadcrumb                 : true
+$alert                      : true
+$modal                      : true
+$popover                    : true
+$dropdown                   : true
+$well                       : true
+$progressbar                : true
+$pager                      : true
+$pagination                 : true
+$carousel                   : true
+$accordion                  : true
+$tabs                       : true
+$bg                         : true
+$txt                        : true
+
+
+// Components State
+// --------------------------------------------
+$state-success              : darken($success-bg, 10%)
+$state-warning              : darken($warning-bg, 10%)
+$state-danger               : darken($danger-bg, 10%)
+
+
+// Tooltip
+// --------------------------------------------
+$tooltip                    : true
+$tooltip-bg                 : $dark-bg
+
+
+// Buttons
+// --------------------------------------------
+$buttons                    : true
+$include-btn-hover          : true
+$include-btn-active         : true
+$include-btn-labeled        : true
+$include-btn-circle         : true
+$include-btn-icon           : true
+$include-btn-rounded        : true
+
+
+// Panels
+// --------------------------------------------
+$panels                     : true
+$panel-default-head-color   : $body-main-color
+$panel-heading-height       : 50px
+$panel-w-tabs               : true
+$panel-w-progressbar        : true
+$panel-w-pagination         : true
+$panel-w-pager              : true
+$panel-w-btn                : true
+
+
+
+
+
+
+
+// EXTRA COMPONENTS
+// ============================================
+$megamenu                   : true
+$chat-widget                : true
+
+
+// Timeline
+// --------------------------------------------
+$timeline                   : true
+$timeline-bg                : $body-bg
+$timeline-color             : $body-color
+$timeline-border-color      : lighten($body-color, 25%)
+
+
+// Email
+// --------------------------------------------
+$email                      : true
+$email-list-odd             : rgba(0, 0, 0, 0.04)
+$email-list-hover           : rgba(0, 0, 0, 0.075)
+$email-highlight            : #f2f0c2
+$email-stared-color         : #ffa100
+$email-stared-hover         : lighten($email-stared-color,15%)
+$email-unstared-color       : #d3d7da
+
+
+// Form Wizard
+// --------------------------------------------
+$form-wizard                : true
+$include-form-wizard-classic: true
+$include-form-wizard-steps  : true
+
+
+// Toggle Switch Plugin Stylesheet
+// --------------------------------------------
+$toggle-switch                              : true
+$toggle-switch-container-width              : 30px
+$toggle-switch-container-height             : 16px
+$toggle-switch-container-border-width       : 0
+$toggle-switch-container-bg                 : #afafaf
+$toggle-switch-container-bg-checked         : #4db446
+$toggle-switch-container-border-color       : transparent
+$toggle-switch-container-box-shadow         : 0
+$toggle-switch-container-transition-duration: .3s
+$toggle-switch-button-margin                : 1px
+$toggle-switch-button-bg                    : #fff
+$toggle-switch-button-box-shadow            : 0 2px 5px 0 fade(#333, 25%)
+$toggle-switch-button-transition-duration   : .3s
+$toggle-switch-label-margin-left            : 10px
+$toggle-switch-label-margin-right           : 0
+$toggle-switch-opacity-disabled             : 0.3
+
+
+// Exclusive Plugin Stylesheet
+// --------------------------------------------
+$nifty-scrollTop             : true
+$nifty-language-selector     : true
+$nifty-overlay               : true
+$nifty-noty                  : true
+$nifty-check                 : true
+$nifty-check-bg              : transparent
+$nifty-check-color           : #515151
+$nifty-check-border          : #5f5f5f
+$nifty-check-border-radius   : $border-radius-base
+
+
+
+
+
+
+
+// GLOBAL MIXINS
+// ============================================
+// Transform
+// --------------------------------------------
+=transform($transform)
+    -webkit-transform: $transform
+    -ms-transform: $transform
+    transform: $transform
+
+
+
+// Transitions
+// --------------------------------------------
+=transition($transition...)
+    transition: $transition
+
+
+
+// Text Selection
+// --------------------------------------------
+=selection($bg, $color)
+    ::selection
+        background-color: $bg
+        color: $color
+
+
+    ::-moz-selection
+        background-color: $bg
+        color: $color
+
+
+
+

@@ -1,0 +1,84 @@
+@import "../../_variables.less";
+& when not (@main-compile){
+    @import "../_themes.less";
+}
+
+
+
+
+// BODY
+//============================================
+@body-bg                    : #edebe6;
+@body-color					: #595e62;
+@boxed-bg                   : #987b63;
+@text-muted                 : lighten(@body-color, 20%);
+
+
+
+
+// GENERAL COMPONENTS
+//============================================
+@state-active-bg            : #6e4726;
+@state-active-color         : #fff;
+
+@selection-bg			    : @state-active-bg;
+@selection-color			: @state-active-color;
+
+
+
+
+// CLEAN ZONE (LOGIN, REGISTER, AND ERROR PAGES CONTAINER)
+//============================================
+@cls-bg                     : @body-bg;
+@cls-color                  : darken(@body-color, 7%);
+
+
+
+
+// NAVIGATION
+//============================================
+@mainnav-bg                 : #2f241b;
+@mainnav-color              : lighten(@mainnav-bg, 60%);
+@mainnav-hover-color        : #fff;
+@mainnav-active-bg          : transparent;
+@mainnav-active-color       : #fff;
+@mainnav-active-state       : @state-active-bg;
+
+
+
+
+// NAVBAR & LOGO
+//============================================
+@navbar-bg                  : @state-active-bg;
+@navbar-color               : #fff;
+@brand-bg                   : transparent;
+@brand-bg-overlay           : @mainnav-bg;
+@brand-color                : @navbar-color;
+@brand-color-overlay        : @brand-color;
+
+
+
+
+// ASIDE
+//============================================
+@aside-dark-bg              : lighten(@mainnav-bg, 6%);
+@aside-dark-color           : #fff;
+@aside-bright-bg            : #fff;
+@aside-bright-color         : @body-color;
+
+
+
+
+// TIMELINE
+//============================================
+@timeline-bg                : @body-bg;
+@timeline-color             : @body-color;
+@timeline-border-color		: lighten(@body-color, 25%);
+
+
+
+
+// FOOTER
+//============================================
+@footer-bg                  : darken(@body-bg, 5%);
+@footer-color               : @body-color;
