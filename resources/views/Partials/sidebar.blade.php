@@ -20,6 +20,15 @@
                             </a>
                         </li>
 
+                        <li class="{{ Request::is('admin/message') ? 'active-link' : '' }}">
+                            <a href="{{route('message.create')}}">
+                                <i class="demo-psi-home"></i>
+                                <span class="menu-title">
+                                    <strong>Nouveau message</strong>
+                                </span>
+                            </a>
+                        </li>
+
 
                         <li>
                             <a href="#">

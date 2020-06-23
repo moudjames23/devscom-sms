@@ -28,6 +28,12 @@ Route::group(['middleware' => 'actived', 'prefix' => "admin"], function (){
 
     /********* ROLE ****************/
     Route::resource('/role', 'RoleController');
+
+    /********* ENVOIE SMS ****************/
+    Route::get('message', 'MessageController@create')->name('message.create');
+    Route::post('message', 'MessageController@send')->name('message.store');
+
+
 });
 
 

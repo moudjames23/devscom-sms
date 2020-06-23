@@ -83,6 +83,16 @@ class PermissionTableSeeder extends Seeder
         ]);
 
 
+        // ENVOIE SMS
+        Permission::create([
+            'permission' => 'envoie_SMS',
+            'label' => 'Envoie SMS',
+            'type' => 'SMS'
+        ]);
+
+
+
+
 
        
     }
